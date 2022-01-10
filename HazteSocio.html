@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Socios</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container py-2">
+        <p class="lead">Introduzca sus datos</p>
+        <form>
+            <input id="nombre" type="text" placeholder="Introduzca su nombre" class="form-control my-2">
+            <input id="edad" type="text" placeholder="Introduzca su edad" class="form-control my-2">
+            <button id="boton" class="btn btn-succes" type="reset" onclick="capturar()">Añadir</button>
+        </form>
+    </div>
+    <div class="conteiner">
+        <table class="table" id="tabla">
+            <thead class="thead-inverse">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <script src="HazteSocio.js"></script>
+</body>

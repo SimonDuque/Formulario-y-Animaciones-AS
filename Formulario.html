@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div align="center">
+        <br><br><br>
+        <form>
+            <label for="email">Email:</label>
+            <input type="text" placeholder="@/gmail/hotmail/.com" id="email" />
+            <br><br>
+            <input type="button" class="btn btn-success" value="Validar Email"
+                onclick="validarEmail(form.email.value)" />
+            <br><br>
+            <label for="password">Contraseña:</label>
+            <input type="text" placeholder="Contraseña nueva" id="password" />
+            <br><br>
+            <label for="password2">Repetir Contraseña:</label>
+            <input type="text" placeholder="Debe ser la misma" id="password2" />
+            <br><br>
+            <input type="button" class="btn btn-success" value="Validar Contraseña"
+                onclick="validarContraseña(form.password.value, form.password2.value)" />
+            <br><br>
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" placeholder="Letras, espacios y acentos" id="nombre" />
+            <br><br>
+            <input type="button" class="btn btn-success" value="Validar Nombre"
+                onclick="validarNombre(form.nombre.value)" />
+            <br><br>
+            <!-- 
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre"/>
+            <br><br>
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido"/>
+            <br><br>
+            <input type="button" class="btn btn-success" value="Validar Nombre y Apellido" onclick="validarNombre(form.nombre.value, form.apellido.value)"/>
+            -->
+            <label for="cp">Código Postal:</label>
+            <input type="text" placeholder="Nº entre 01000 y 52999" id="cp" />
+            <br><br>
+            <input type="button" class="btn btn-success" value="Validar Código Postal"
+                onclick="validarCodigoPostal(form.cp.value)" />
+            <br><br>
+            <b><label for="insulto">Escribe un comentario:</label></b>
+            <input type="text" id="texto">
+            <input type="button" value="Validar Área texto" onclick="validarInsultos(form.texto.value)" />
+        </form>
+    </div>
+    <script src="Formulario.js"></script>
+</body>
+
+</html>
